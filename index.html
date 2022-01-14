@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Consultando CEP</h1>
+        <form id="register-form">
+            <div class="half-box spacing">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep" placeholder="Ex: 00000-000">
+            </div>
+            <div class="half-box spacing">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf" placeholder="Estado">
+            </div>
+            <div class="full-box">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" placeholder=" Ex: Rua flor verde">
+            </div>
+            <div class="full-box">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+            </div>
+            <div class="full-box">
+                <label for="ocalidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade" placeholder="Cidade">
+            </div>
+            <div class="full-box">
+                <input type="submit" id="agreement"value="Submit">
+            </div> 
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
